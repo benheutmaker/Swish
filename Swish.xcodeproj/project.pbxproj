@@ -7,14 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		238356D21BDC0BDA00D04EDB /* TisprCardStackViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 238356CF1BDC0BDA00D04EDB /* TisprCardStackViewCell.swift */; };
+		238356D31BDC0BDA00D04EDB /* TisprCardStackViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 238356D01BDC0BDA00D04EDB /* TisprCardStackViewController.swift */; };
+		238356D41BDC0BDA00D04EDB /* TisprCardStackViewLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 238356D11BDC0BDA00D04EDB /* TisprCardStackViewLayout.swift */; };
+		2383571A1BDC189C00D04EDB /* SWCardDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 238357191BDC189C00D04EDB /* SWCardDelegate.swift */; };
 		23A190A01BDBFBE3009DE97C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23A1909F1BDBFBE3009DE97C /* AppDelegate.swift */; };
-		23A190A21BDBFBE3009DE97C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23A190A11BDBFBE3009DE97C /* ViewController.swift */; };
+		23A190A21BDBFBE3009DE97C /* CardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23A190A11BDBFBE3009DE97C /* CardViewController.swift */; };
 		23A190A51BDBFBE3009DE97C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 23A190A31BDBFBE3009DE97C /* Main.storyboard */; };
 		23A190A81BDBFBE3009DE97C /* Swish.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 23A190A61BDBFBE3009DE97C /* Swish.xcdatamodeld */; };
 		23A190AA1BDBFBE3009DE97C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 23A190A91BDBFBE3009DE97C /* Assets.xcassets */; };
 		23A190AD1BDBFBE3009DE97C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 23A190AB1BDBFBE3009DE97C /* LaunchScreen.storyboard */; };
 		23A190B81BDBFBE3009DE97C /* SwishTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23A190B71BDBFBE3009DE97C /* SwishTests.swift */; };
 		23A190C31BDBFBE3009DE97C /* SwishUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23A190C21BDBFBE3009DE97C /* SwishUITests.swift */; };
+		23B5F0781BDBFEDD00E69F03 /* CardCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23B5F0771BDBFEDD00E69F03 /* CardCell.swift */; };
+		23B5F07A1BDC03EA00E69F03 /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23B5F0791BDC03EA00E69F03 /* Product.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,9 +41,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		238356CF1BDC0BDA00D04EDB /* TisprCardStackViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TisprCardStackViewCell.swift; sourceTree = "<group>"; };
+		238356D01BDC0BDA00D04EDB /* TisprCardStackViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TisprCardStackViewController.swift; sourceTree = "<group>"; };
+		238356D11BDC0BDA00D04EDB /* TisprCardStackViewLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TisprCardStackViewLayout.swift; sourceTree = "<group>"; };
+		238357191BDC189C00D04EDB /* SWCardDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SWCardDelegate.swift; sourceTree = "<group>"; };
 		23A1909C1BDBFBE3009DE97C /* Swish.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Swish.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		23A1909F1BDBFBE3009DE97C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		23A190A11BDBFBE3009DE97C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		23A190A11BDBFBE3009DE97C /* CardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardViewController.swift; sourceTree = "<group>"; };
 		23A190A41BDBFBE3009DE97C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		23A190A71BDBFBE3009DE97C /* Swish.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Swish.xcdatamodel; sourceTree = "<group>"; };
 		23A190A91BDBFBE3009DE97C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -49,6 +59,11 @@
 		23A190BE1BDBFBE3009DE97C /* SwishUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwishUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		23A190C21BDBFBE3009DE97C /* SwishUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwishUITests.swift; sourceTree = "<group>"; };
 		23A190C41BDBFBE3009DE97C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		23B5F0771BDBFEDD00E69F03 /* CardCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardCell.swift; sourceTree = "<group>"; };
+		23B5F0791BDC03EA00E69F03 /* Product.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
+		37CDE64C986E68341CDB564B /* Pods-Swish.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Swish.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Swish/Pods-Swish.debug.xcconfig"; sourceTree = "<group>"; };
+		7450F5C6CD917F7614BBA804 /* Pods-Swish.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Swish.release.xcconfig"; path = "Pods/Target Support Files/Pods-Swish/Pods-Swish.release.xcconfig"; sourceTree = "<group>"; };
+		9C80B4A228BE57073C780014 /* Pods_Swish.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Swish.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +98,8 @@
 				23A190B61BDBFBE3009DE97C /* SwishTests */,
 				23A190C11BDBFBE3009DE97C /* SwishUITests */,
 				23A1909D1BDBFBE3009DE97C /* Products */,
+				9920381948328F02084D5A0B /* Pods */,
+				5C645EF8C151D4FA1A591A8F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -100,7 +117,11 @@
 			isa = PBXGroup;
 			children = (
 				23A1909F1BDBFBE3009DE97C /* AppDelegate.swift */,
-				23A190A11BDBFBE3009DE97C /* ViewController.swift */,
+				23A190A11BDBFBE3009DE97C /* CardViewController.swift */,
+				238357191BDC189C00D04EDB /* SWCardDelegate.swift */,
+				23B5F0771BDBFEDD00E69F03 /* CardCell.swift */,
+				23B5F0791BDC03EA00E69F03 /* Product.swift */,
+				23B5F0761BDBFE6200E69F03 /* TisperCardStack */,
 				23A190A31BDBFBE3009DE97C /* Main.storyboard */,
 				23A190A91BDBFBE3009DE97C /* Assets.xcassets */,
 				23A190AB1BDBFBE3009DE97C /* LaunchScreen.storyboard */,
@@ -126,6 +147,33 @@
 				23A190C41BDBFBE3009DE97C /* Info.plist */,
 			);
 			path = SwishUITests;
+			sourceTree = "<group>";
+		};
+		23B5F0761BDBFE6200E69F03 /* TisperCardStack */ = {
+			isa = PBXGroup;
+			children = (
+				238356CF1BDC0BDA00D04EDB /* TisprCardStackViewCell.swift */,
+				238356D01BDC0BDA00D04EDB /* TisprCardStackViewController.swift */,
+				238356D11BDC0BDA00D04EDB /* TisprCardStackViewLayout.swift */,
+			);
+			name = TisperCardStack;
+			sourceTree = "<group>";
+		};
+		5C645EF8C151D4FA1A591A8F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9C80B4A228BE57073C780014 /* Pods_Swish.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9920381948328F02084D5A0B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				37CDE64C986E68341CDB564B /* Pods-Swish.debug.xcconfig */,
+				7450F5C6CD917F7614BBA804 /* Pods-Swish.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -258,9 +306,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				23A190A21BDBFBE3009DE97C /* ViewController.swift in Sources */,
+				23B5F0781BDBFEDD00E69F03 /* CardCell.swift in Sources */,
+				23A190A21BDBFBE3009DE97C /* CardViewController.swift in Sources */,
+				238356D21BDC0BDA00D04EDB /* TisprCardStackViewCell.swift in Sources */,
 				23A190A01BDBFBE3009DE97C /* AppDelegate.swift in Sources */,
+				238356D41BDC0BDA00D04EDB /* TisprCardStackViewLayout.swift in Sources */,
+				23B5F07A1BDC03EA00E69F03 /* Product.swift in Sources */,
+				238356D31BDC0BDA00D04EDB /* TisprCardStackViewController.swift in Sources */,
 				23A190A81BDBFBE3009DE97C /* Swish.xcdatamodeld in Sources */,
+				2383571A1BDC189C00D04EDB /* SWCardDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -487,6 +541,7 @@
 				23A190C91BDBFBE3009DE97C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		23A190CA1BDBFBE3009DE97C /* Build configuration list for PBXNativeTarget "SwishTests" */ = {
 			isa = XCConfigurationList;
@@ -495,6 +550,7 @@
 				23A190CC1BDBFBE3009DE97C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		23A190CD1BDBFBE3009DE97C /* Build configuration list for PBXNativeTarget "SwishUITests" */ = {
 			isa = XCConfigurationList;
@@ -503,6 +559,7 @@
 				23A190CF1BDBFBE3009DE97C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

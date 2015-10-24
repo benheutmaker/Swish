@@ -1,25 +1,81 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9046" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="Chs-Cu-3lB">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9035"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
-        <scene sceneID="tne-QT-ifu">
+        <!--Card View Controller-->
+        <scene sceneID="wwg-m8-8Y2">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
-                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                <collectionViewController id="Chs-Cu-3lB" customClass="CardViewController" customModule="Swish" customModuleProvider="target" sceneMemberID="viewController">
+                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="HyS-on-qOM">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                        <animations/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <collectionViewLayout key="collectionViewLayout" id="Vx8-Tr-qvV" customClass="TisprCardStackViewLayout" customModule="Swish" customModuleProvider="target"/>
+                        <cells>
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="Card" id="64A-Y6-TEG" customClass="CardCell" customModule="Swish" customModuleProvider="target">
+                                <rect key="frame" x="123.5" y="0.0" width="353" height="397"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                    <rect key="frame" x="0.0" y="0.0" width="353" height="397"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="dress" translatesAutoresizingMaskIntoConstraints="NO" id="XIh-ik-Xgd">
+                                            <rect key="frame" x="-0.5" y="0.0" width="353" height="397"/>
+                                            <animations/>
+                                        </imageView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gq4-uj-Srh">
+                                            <rect key="frame" x="8" y="8" width="337" height="57.5"/>
+                                            <animations/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="57.5" id="N7N-WY-Oso"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" type="system" pointSize="48"/>
+                                            <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <animations/>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                </view>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="XIh-ik-Xgd" secondAttribute="bottom" id="1Qk-H2-8QK"/>
+                                    <constraint firstItem="gq4-uj-Srh" firstAttribute="top" secondItem="64A-Y6-TEG" secondAttribute="topMargin" id="Hb3-5Y-3hC"/>
+                                    <constraint firstItem="XIh-ik-Xgd" firstAttribute="top" secondItem="64A-Y6-TEG" secondAttribute="top" id="Isx-dK-wpT"/>
+                                    <constraint firstItem="XIh-ik-Xgd" firstAttribute="leading" secondItem="64A-Y6-TEG" secondAttribute="leading" id="Qsi-Wx-KJh"/>
+                                    <constraint firstItem="gq4-uj-Srh" firstAttribute="leading" secondItem="64A-Y6-TEG" secondAttribute="leadingMargin" id="RqX-26-Kar"/>
+                                    <constraint firstAttribute="trailingMargin" secondItem="gq4-uj-Srh" secondAttribute="trailing" id="fEl-gX-Fre"/>
+                                    <constraint firstAttribute="trailing" secondItem="XIh-ik-Xgd" secondAttribute="trailing" id="opT-s7-oo6"/>
+                                </constraints>
+                                <size key="customSize" width="353" height="397"/>
+                                <connections>
+                                    <outlet property="label" destination="gq4-uj-Srh" id="TRi-aN-WGw"/>
+                                    <outlet property="productImageView" destination="XIh-ik-Xgd" id="HHO-nF-jye"/>
+                                </connections>
+                            </collectionViewCell>
+                        </cells>
+                        <connections>
+                            <outlet property="dataSource" destination="Chs-Cu-3lB" id="byl-un-lVU"/>
+                            <outlet property="delegate" destination="Chs-Cu-3lB" id="lj5-ZC-HtB"/>
+                        </connections>
+                    </collectionView>
+                </collectionViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Zf4-JP-6J5" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <view contentMode="scaleToFill" id="BpU-FU-1Jf">
+                    <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <animations/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                </view>
             </objects>
+            <point key="canvasLocation" x="399" y="473"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="dress" width="1625" height="2440"/>
+    </resources>
 </document>
