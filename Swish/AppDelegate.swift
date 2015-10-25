@@ -9,14 +9,20 @@
 import UIKit
 import CoreData
 
+let resetCardStackNotification = "resetCardStackNotification"
+
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
 
+    let PUBLIC_PAYMENT_KEY = "sbpb_NGJlMDZmMDMtMjRiYS00NmQ1LWI4NWYtN2Q1MGQ1NzY5MTcy"
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
+        
+        UIApplication.sharedApplication().statusBarHidden = true
+        
         return true
     }
 

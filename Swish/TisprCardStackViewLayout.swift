@@ -108,11 +108,19 @@ public class TisprCardStackViewLayout: UICollectionViewLayout, UIGestureRecogniz
     private let angleOfRotationForNewCardAnimation: CGFloat = 0.25
     
     private let verticalOffsetBetweenCardsInTopStack = 0
-    private let centralCardYPosition = 20
+    private let centralCardYPosition = 0
     
     private var panGestureRecognizer: UIPanGestureRecognizer?
     private var swipeRecognizerDown: UISwipeGestureRecognizer?
     private var swipeRecognizerUp: UISwipeGestureRecognizer?
+    
+    func disableSwipeRecognizerDown() {
+        swipeRecognizerDown = nil
+    }
+    
+    func disableSwipeRecognizerUp() {
+        swipeRecognizerUp = nil
+    }
     
     private let minimumXPanDistanceToSwipe: CGFloat = 100
     private let minimumYPanDistanceToSwipe: CGFloat = 60
@@ -238,13 +246,13 @@ public class TisprCardStackViewLayout: UICollectionViewLayout, UIGestureRecogniz
             // Take the card at the current index
             // and process the swipe up only if it occurs below it
             
-            
-            
             index--
         case UISwipeGestureRecognizerDirection.Down:
             if index + 1 < collectionView!.numberOfItemsInSection(0) {
                 index++
             }
+            
+            
         default:
             break
         }
@@ -346,12 +354,8 @@ public class TisprCardStackViewLayout: UICollectionViewLayout, UIGestureRecogniz
     //MARK: - UIGestureRecognizerDelegate
     
     public func gestureRecognizerShouldBegin(gestureRecognizer: UIGestureRecognizer) -> Bool {
-        var result:Bool = true
-        if let panGesture = gestureRecognizer as? UIPanGestureRecognizer {
-            let velocity = panGesture.velocityInView(collectionView)
-            result = abs(Int(velocity.y)) < 250
-        }
-        return result
+        return true
     }
+    
     
 }

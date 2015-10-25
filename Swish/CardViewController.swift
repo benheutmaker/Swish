@@ -17,6 +17,8 @@ class CardViewController: TisprCardStackViewController, TisprCardStackViewContro
         
         setupDemoProducts()
         setupCardLayout()
+        
+        registerForNotifications()
     }
     
     private func setupCardLayout() {
@@ -27,7 +29,10 @@ class CardViewController: TisprCardStackViewController, TisprCardStackViewContro
         
         cardStackDelegate = self
         
-        let cardSize = CGSize(width: self.view.frame.width, height: self.view.frame.height - 44)
+        layout.disableSwipeRecognizerDown()
+        layout.disableSwipeRecognizerUp()
+        
+        let cardSize = CGSize(width: self.view.frame.width, height: self.view.frame.height)
         
         setAnimationSpeed(0.85)
         setCardSize(cardSize)
@@ -38,10 +43,9 @@ class CardViewController: TisprCardStackViewController, TisprCardStackViewContro
     }
     
     private func setupDemoProducts() {
-        let dressImage = UIImage(named: "dress")!
         
-        for var i = 0; i < 25; i++ {
-            let newProduct = Product(image: dressImage)
+        for var i: Int = 0; i < 6; i++ {
+            let newProduct = Product(image: UIImage(named: "\(i + 1)")!)
             products.append(newProduct)
         }
     }
@@ -64,7 +68,17 @@ class CardViewController: TisprCardStackViewController, TisprCardStackViewContro
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
-
+    
+    func resetCardStack() {
+        setupDemoProducts()
+        
+        collectionView?.reloadData()
+    }
+    
+    //NSNotificationCenter
+    
+    private func registerForNotifications() {
+        NSNotificationCenter.defaultCenter().addObserver(self, selector: "resetCardStack", name: resetCardStackNotification, object: nil)
+    }
 }
 
