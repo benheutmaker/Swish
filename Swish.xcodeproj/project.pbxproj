@@ -272,6 +272,7 @@
 		23A190941BDBFBE3009DE97C /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftUpdateCheck = 0710;
 				LastUpgradeCheck = 0710;
 				ORGANIZATIONNAME = "Ben Heutmaker";
 				TargetAttributes = {

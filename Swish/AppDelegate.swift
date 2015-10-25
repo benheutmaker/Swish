@@ -46,25 +46,26 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         ++points
         pointsView.pointsLabel.text = "\(points)"
         animateLabel(pointsView.pointsLabel)
+        pointsView.animateSparkleImage()
     }
     
     func add5Points() {
         points += 5
         pointsView.pointsLabel.text = "\(points)"
         animateLabel(pointsView.pointsLabel)
+        pointsView.animateSparkleImage()
     }
     
     func add75Points() {
         points += 75
         pointsView.pointsLabel.text = "\(points)"
         animateLabel(pointsView.pointsLabel)
+        pointsView.animateSparkleImage()
     }
     
     func animateLabel(label: UILabel) {
         UIView.animateKeyframesWithDuration(1.0, delay: 0, options: UIViewKeyframeAnimationOptions.BeginFromCurrentState, animations: { () -> Void in
-//            UIView.addKeyframeWithRelativeStartTime(0.0, relativeDuration: 0.5, animations: { () -> Void in
-//                label.layer.transform = CATransform3DScale(label.layer.transform, 1, 1, 1)
-//            })
+            
             UIView.addKeyframeWithRelativeStartTime(0.0, relativeDuration: 0.5, animations: { () -> Void in
                 label.layer.transform = CATransform3DScale(label.layer.transform, 2, 2, 1)
             })
@@ -85,10 +86,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     private func setupPointsLabel() {
         pointsView = UINib(nibName: "PointsView", bundle: nil).instantiateWithOwner(self, options: nil)[0] as! PointsViewController
         
-        pointsView.view.frame = CGRect(x: 10, y: 10, width: 50, height: 30)
+        pointsView.view.frame = CGRect(x: 0, y: 10, width: 75, height: 35)
         
-        pointsView.view.layer.cornerRadius = 4
-        pointsView.view.clipsToBounds = true
+        pointsView.view.clipsToBounds = false
         
         self.window?.addSubview(pointsView.view)
         

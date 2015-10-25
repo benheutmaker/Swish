@@ -22,3 +22,20 @@ let allProducts: [Product] = [
     
     Product(imageString: "6", price: 49.00, productDescription: "The dress leaves her shoulders uncovered, instead it's supported around her neck and flows down into a fancy sweetheart neckline. It's a loose fit which makes the dress look comfortable, yet elegant and stylish.\nHer arms have been covered all the way down to her wrists. The sleeves are a tight, but comfortable fit from top to bottom, allowing for enough movement while still looking stylish.\nThe dress' waist is thin, but it's a slim fit. A bow has been wrapped around her waist and positioned slightly to one side.\nBelow the waist the dress fits snug around her and has a straight style. The dress reaches to just below her knees and is longer in the back.\nShe's wearing ballerina flats, no other shoe would've matched this dress better. To top it all of she's wearing a bow in her hair and several lavish bracelets.")
 ]
+
+let sparkleImages = [
+    UIImage(named: "sparkle1")!,
+    UIImage(named: "sparkle2")!,
+    UIImage(named: "sparkle3")!,
+    UIImage(named: "sparkle4")!,
+    UIImage(named: "sparkle5")!,
+    UIImage(named: "sparkle6")!,
+    UIImage(named: "sparkle7")!,
+    UIImage(named: "sparkle8")!,
+    UIImage(named: "sparkle9")!,
+    UIImage(named: "sparkle10")!,
+    UIImage(named: "sparkle11")!,
+    UIImage(named: "sparkle12")!,
+    UIImage(named: "sparkle13")!,
+    UIImage(named: "sparkle14")!
+]

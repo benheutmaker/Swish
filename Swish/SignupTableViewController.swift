@@ -37,7 +37,7 @@ class SignupTableViewController: UIViewController, SIMChargeCardViewControllerDe
     func creditCardTokenProcessed(token: SIMCreditCardToken!) {
         print(token.token)
         
-        let alert = UIAlertController(title: "Congratulations", message: "That is gonna look gorgeous on you.", preferredStyle: UIAlertControllerStyle.Alert)
+        let alert = UIAlertController(title: "Congratulations", message: "That's gonna look gorgeous on you.", preferredStyle: UIAlertControllerStyle.Alert)
         
         let okayAction = UIAlertAction(title: "Thanks!", style: UIAlertActionStyle.Default) { (action) -> Void in
             NSNotificationCenter.defaultCenter().postNotificationName(resetCardStackNotification, object: nil)

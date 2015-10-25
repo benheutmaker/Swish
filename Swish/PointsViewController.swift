@@ -11,6 +11,14 @@ import UIKit
 class PointsViewController: UIViewController {
 
     @IBOutlet var pointsLabel: UILabel!
+    @IBOutlet var sparkleImageView: UIImageView!
+    
+    func animateSparkleImage() {
+        sparkleImageView.animationImages = sparkleImages
+        sparkleImageView.animationRepeatCount = 1
+        sparkleImageView.animationDuration = 1
+        sparkleImageView.startAnimating()
+    }
     
     /*
     // Only override drawRect: if you perform custom drawing.
