@@ -24,6 +24,11 @@
 		23A190C31BDBFBE3009DE97C /* SwishUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23A190C21BDBFBE3009DE97C /* SwishUITests.swift */; };
 		23B5F0781BDBFEDD00E69F03 /* CardCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23B5F0771BDBFEDD00E69F03 /* CardCell.swift */; };
 		23B5F07A1BDC03EA00E69F03 /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23B5F0791BDC03EA00E69F03 /* Product.swift */; };
+		23DE0C651BDC9775007917A2 /* StaticDatasource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23DE0C641BDC9775007917A2 /* StaticDatasource.swift */; };
+		23DE0C6A1BDCC106007917A2 /* GHContextMenuView.m in Sources */ = {isa = PBXBuildFile; fileRef = 23DE0C691BDCC106007917A2 /* GHContextMenuView.m */; };
+		23DE0C6C1BDD16B2007917A2 /* PointsView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 23DE0C6B1BDD16B2007917A2 /* PointsView.xib */; };
+		23DE0C6E1BDD1729007917A2 /* PointsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23DE0C6D1BDD1729007917A2 /* PointsViewController.swift */; };
+		DFD2409453F5E16BBEECF76D /* libPods-Swish.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FA9312B01688ADE9C0F85BBC /* libPods-Swish.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -68,8 +73,14 @@
 		23A190C41BDBFBE3009DE97C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		23B5F0771BDBFEDD00E69F03 /* CardCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardCell.swift; sourceTree = "<group>"; };
 		23B5F0791BDC03EA00E69F03 /* Product.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
+		23DE0C641BDC9775007917A2 /* StaticDatasource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StaticDatasource.swift; sourceTree = "<group>"; };
+		23DE0C681BDCC106007917A2 /* GHContextMenuView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GHContextMenuView.h; sourceTree = "<group>"; };
+		23DE0C691BDCC106007917A2 /* GHContextMenuView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GHContextMenuView.m; sourceTree = "<group>"; };
+		23DE0C6B1BDD16B2007917A2 /* PointsView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PointsView.xib; sourceTree = "<group>"; };
+		23DE0C6D1BDD1729007917A2 /* PointsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PointsViewController.swift; sourceTree = "<group>"; };
 		37CDE64C986E68341CDB564B /* Pods-Swish.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Swish.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Swish/Pods-Swish.debug.xcconfig"; sourceTree = "<group>"; };
 		7450F5C6CD917F7614BBA804 /* Pods-Swish.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Swish.release.xcconfig"; path = "Pods/Target Support Files/Pods-Swish/Pods-Swish.release.xcconfig"; sourceTree = "<group>"; };
+		FA9312B01688ADE9C0F85BBC /* libPods-Swish.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Swish.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,6 +89,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				238357C11BDC48B900D04EDB /* Simplify.framework in Frameworks */,
+				DFD2409453F5E16BBEECF76D /* libPods-Swish.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -129,7 +141,12 @@
 				23B5F0771BDBFEDD00E69F03 /* CardCell.swift */,
 				23B5F0791BDC03EA00E69F03 /* Product.swift */,
 				2383571D1BDC389B00D04EDB /* SignupTableViewController.swift */,
+				23DE0C641BDC9775007917A2 /* StaticDatasource.swift */,
 				238357BE1BDC45CC00D04EDB /* Swish-Bridging-Header.h */,
+				23DE0C681BDCC106007917A2 /* GHContextMenuView.h */,
+				23DE0C6B1BDD16B2007917A2 /* PointsView.xib */,
+				23DE0C6D1BDD1729007917A2 /* PointsViewController.swift */,
+				23DE0C691BDCC106007917A2 /* GHContextMenuView.m */,
 				238357BF1BDC48B900D04EDB /* Simplify.framework */,
 				238357C01BDC48B900D04EDB /* Simplify.bundle */,
 				23B5F0761BDBFE6200E69F03 /* TisperCardStack */,
@@ -173,6 +190,7 @@
 		5C645EF8C151D4FA1A591A8F /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				FA9312B01688ADE9C0F85BBC /* libPods-Swish.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -193,9 +211,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 23A190C71BDBFBE3009DE97C /* Build configuration list for PBXNativeTarget "Swish" */;
 			buildPhases = (
+				0935B8004000212D7B52842A /* Check Pods Manifest.lock */,
 				23A190981BDBFBE3009DE97C /* Sources */,
 				23A190991BDBFBE3009DE97C /* Frameworks */,
 				23A1909A1BDBFBE3009DE97C /* Resources */,
+				849F2C808F8D803E57907B44 /* Embed Pods Frameworks */,
+				3A8E60843EDD580DE6C48497 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -294,6 +315,7 @@
 				23A190AD1BDBFBE3009DE97C /* LaunchScreen.storyboard in Resources */,
 				23A190AA1BDBFBE3009DE97C /* Assets.xcassets in Resources */,
 				23A190A51BDBFBE3009DE97C /* Main.storyboard in Resources */,
+				23DE0C6C1BDD16B2007917A2 /* PointsView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -313,6 +335,54 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		0935B8004000212D7B52842A /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		3A8E60843EDD580DE6C48497 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Swish/Pods-Swish-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		849F2C808F8D803E57907B44 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Swish/Pods-Swish-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		23A190981BDBFBE3009DE97C /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -322,10 +392,13 @@
 				23A190A21BDBFBE3009DE97C /* CardViewController.swift in Sources */,
 				238356D21BDC0BDA00D04EDB /* TisprCardStackViewCell.swift in Sources */,
 				23A190A01BDBFBE3009DE97C /* AppDelegate.swift in Sources */,
+				23DE0C6E1BDD1729007917A2 /* PointsViewController.swift in Sources */,
 				238356D41BDC0BDA00D04EDB /* TisprCardStackViewLayout.swift in Sources */,
 				23B5F07A1BDC03EA00E69F03 /* Product.swift in Sources */,
+				23DE0C6A1BDCC106007917A2 /* GHContextMenuView.m in Sources */,
 				238356D31BDC0BDA00D04EDB /* TisprCardStackViewController.swift in Sources */,
 				23A190A81BDBFBE3009DE97C /* Swish.xcdatamodeld in Sources */,
+				23DE0C651BDC9775007917A2 /* StaticDatasource.swift in Sources */,
 				2383571A1BDC189C00D04EDB /* SWCardDelegate.swift in Sources */,
 				2383571E1BDC389B00D04EDB /* SignupTableViewController.swift in Sources */,
 			);
@@ -467,6 +540,7 @@
 		};
 		23A190C81BDBFBE3009DE97C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 37CDE64C986E68341CDB564B /* Pods-Swish.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
@@ -478,6 +552,7 @@
 					"$(PROJECT_DIR)/Swish",
 				);
 				INFOPLIST_FILE = Swish/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
@@ -494,6 +569,7 @@
 		};
 		23A190C91BDBFBE3009DE97C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7450F5C6CD917F7614BBA804 /* Pods-Swish.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
@@ -504,6 +580,7 @@
 					"$(PROJECT_DIR)/Swish",
 				);
 				INFOPLIST_FILE = Swish/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",

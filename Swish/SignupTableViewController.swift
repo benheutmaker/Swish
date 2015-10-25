@@ -15,18 +15,10 @@ class SignupTableViewController: UIViewController, SIMChargeCardViewControllerDe
     
     @IBAction func handlePaymentButtonPressed(sender: UIButton) {
         
-        let paymentSummaryItems: [PKPaymentSummaryItem] = [
-            PKPaymentSummaryItem(label: "Amount", amount: NSDecimalNumber(double: 25.00), type: PKPaymentSummaryItemType.Final),
-            PKPaymentSummaryItem(label: "Tax", amount: NSDecimalNumber(double: 26.98), type: PKPaymentSummaryItemType.Final)
-        ]
+        NSNotificationCenter.defaultCenter().postNotificationName(hidePointLabelNotification, object: nil)
         
-        let paymentRequest = PKPaymentRequest()
-        paymentRequest.paymentSummaryItems = paymentSummaryItems
-        
-        let chargeVC = SIMChargeCardViewController(publicKey: PUBLIC_PAYMENT_KEY, paymentRequest: paymentRequest)
+        let chargeVC = SIMChargeCardViewController(publicKey: PUBLIC_PAYMENT_KEY)
         chargeVC.delegate = self
-        
-//        paymentRequest.shippingAddress
         
         self.presentViewController(chargeVC, animated: true, completion: nil)
     }
@@ -35,19 +27,22 @@ class SignupTableViewController: UIViewController, SIMChargeCardViewControllerDe
     
     func chargeCardCancelled() {
         NSNotificationCenter.defaultCenter().postNotificationName(resetCardStackNotification, object: nil)
+        NSNotificationCenter.defaultCenter().postNotificationName(hidePointLabelNotification, object: nil)
     }
     
     func creditCardTokenFailedWithError(error: NSError!) {
-        
+        NSNotificationCenter.defaultCenter().postNotificationName(hidePointLabelNotification, object: nil)
     }
     
     func creditCardTokenProcessed(token: SIMCreditCardToken!) {
         print(token.token)
         
-        let alert = UIAlertController(title: "Confirmed", message: "Your item has successfully been purchased and on it's way!", preferredStyle: UIAlertControllerStyle.Alert)
+        let alert = UIAlertController(title: "Congratulations", message: "That is gonna look gorgeous on you.", preferredStyle: UIAlertControllerStyle.Alert)
         
-        let okayAction = UIAlertAction(title: "Okay", style: UIAlertActionStyle.Default) { (action) -> Void in
+        let okayAction = UIAlertAction(title: "Thanks!", style: UIAlertActionStyle.Default) { (action) -> Void in
             NSNotificationCenter.defaultCenter().postNotificationName(resetCardStackNotification, object: nil)
+            NSNotificationCenter.defaultCenter().postNotificationName(hidePointLabelNotification, object: nil)
+            NSNotificationCenter.defaultCenter().postNotificationName(add75PointsNotification, object: nil)
         }
         
         alert.addAction(okayAction)

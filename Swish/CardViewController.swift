@@ -7,18 +7,67 @@
 //
 
 import UIKit
+import Social
 
-class CardViewController: TisprCardStackViewController, TisprCardStackViewControllerDelegate {
+class CardViewController: TisprCardStackViewController, TisprCardStackViewControllerDelegate, GHContextOverlayViewDataSource, GHContextOverlayViewDelegate {
     
     var products: [Product] = []
+    
+    var longPress: UILongPressGestureRecognizer!
+    
+    var overlayMenu = GHContextMenuView()
+    
+    var currentCard = 0
 
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        setupDemoProducts()
+        products += allProducts
         setupCardLayout()
         
         registerForNotifications()
+        
+        longPress = UILongPressGestureRecognizer(target: overlayMenu, action: "longPressDetected:")
+        longPress.delaysTouchesBegan = true
+        longPress.minimumPressDuration = 0.5
+        
+        collectionView?.addGestureRecognizer(longPress)
+        
+        overlayMenu.dataSource = self
+        overlayMenu.delegate = self
+    }
+    
+    func numberOfMenuItems() -> Int {
+        return 4
+    }
+    
+    func imageForItemAtIndex(index: Int) -> UIImage! {
+        switch index {
+        case 0: return UIImage(named: "twitter")!
+        case 1: return UIImage(named: "facebook")!
+        case 2: return UIImage(named: "instagram")!
+        case 3: return UIImage(named: "email")!
+        default: return nil
+        }
+    }
+    
+    func didSelectItemAtIndex(selectedIndex: Int, forMenuAtPoint point: CGPoint) {
+        if selectedIndex == 0 {
+            if SLComposeViewController.isAvailableForServiceType(SLServiceTypeTwitter) {
+                let tweetSheet  = SLComposeViewController(forServiceType: SLServiceTypeTwitter)
+                tweetSheet.setInitialText("I love these clothes! #SoSwish @App_Swish")
+                tweetSheet.addImage(UIImage(named: "\(currentCard + 1)"))
+                self.presentViewController(tweetSheet, animated: true, completion: { () -> Void in
+                    NSNotificationCenter.defaultCenter().postNotificationName(add5PointsNotification, object: nil)
+                })
+
+            } else {
+                let alert = UIAlertController(title: "No Twitter account set up", message: "Please head over to settings and connect a Twitter account!", preferredStyle: UIAlertControllerStyle.Alert)
+                let okayAction = UIAlertAction(title: "Okay", style: UIAlertActionStyle.Default, handler: nil)
+                alert.addAction(okayAction)
+                self.presentViewController(alert, animated: true, completion: nil)
+            }
+        }
     }
     
     private func setupCardLayout() {
@@ -39,15 +88,9 @@ class CardViewController: TisprCardStackViewController, TisprCardStackViewContro
     }
     
     func cardDidChangeState(cardIndex: Int) {
-         print("card changed")
-    }
-    
-    private func setupDemoProducts() {
+        currentCard++
         
-        for var i: Int = 0; i < 6; i++ {
-            let newProduct = Product(image: UIImage(named: "\(i + 1)")!)
-            products.append(newProduct)
-        }
+        NSNotificationCenter.defaultCenter().postNotificationName(add1PointNotification, object: nil)
     }
     
     override func numberOfCards() -> Int {
@@ -59,7 +102,8 @@ class CardViewController: TisprCardStackViewController, TisprCardStackViewContro
         
         let product = products[indexPath.row]
         
-        card.productImageView.image = product.image
+        card.productImageView.image = UIImage(named: product.imageString)
+        card.productDescriptionLabel.text = product.productDescription
         
         return card
     }
@@ -70,9 +114,9 @@ class CardViewController: TisprCardStackViewController, TisprCardStackViewContro
     }
     
     func resetCardStack() {
-        setupDemoProducts()
-        
+        self.products += allProducts
         collectionView?.reloadData()
+        currentCard = 0
     }
     
     //NSNotificationCenter

@@ -8,6 +8,13 @@
 
 import UIKit
 
+enum CardState {
+    case In
+    case Out
+    case Swish
+    case Idle
+}
+
 class CardCell: TisprCardStackViewCell {
     
     @IBOutlet var productImageView: UIImageView!
@@ -16,18 +23,15 @@ class CardCell: TisprCardStackViewCell {
     @IBOutlet var likeImageView: UIImageView!
     @IBOutlet var dislikeImageView: UIImageView!
     
+    @IBOutlet var productDescriptionLabel: UILabel!
+    
     var startingCenterY: CGFloat = -999;
+    
+    var cardState = CardState.Idle
     
     override func awakeFromNib() {
         super.awakeFromNib()
-        
-        layer.cornerRadius = 12
-        clipsToBounds = false
-        
-//        swishLabel.hidden = true
-//        dislikeLabel.hidden = true
-//        likeLabel.hidden = true
-        
+                
         swishImageView.layer.shadowOffset = CGSize(width: 3, height: 3)
         swishImageView.layer.shadowOpacity = 0.3
         swishImageView.layer.shadowRadius = 6
@@ -55,15 +59,20 @@ class CardCell: TisprCardStackViewCell {
     func updateSmileVote() {
         let rotation = atan2(transform.b, transform.a) * 100
         
-        if rotation > 10 {
+        if rotation > 7 {
+            //Dislike
             likeImageView.hidden = false
             dislikeImageView.hidden = true
             swishImageView.hidden = true
             
-        } else if rotation < -10 {
+            cardState = CardState.Out
+            
+        } else if rotation < -7 {
             likeImageView.hidden = true
             dislikeImageView.hidden = false
             swishImageView.hidden = true
+            
+            cardState = CardState.In
         
         } else {
         
@@ -77,12 +86,21 @@ class CardCell: TisprCardStackViewCell {
                 likeImageView.hidden = true
                 dislikeImageView.hidden = true
                 
+                cardState = CardState.Swish
+                
             } else {
                 swishImageView.hidden = true
                 likeImageView.hidden = true
                 dislikeImageView.hidden = true
+                
+                cardState = CardState.Idle
             }
+            
+            print(self.cardState)
         }
     }
+    
+    
+    
+    
 }
-

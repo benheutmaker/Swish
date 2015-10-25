@@ -10,9 +10,13 @@ import UIKit
 
 class Product: NSObject {
     
-    var image: UIImage
+    var imageString: String
+    var price: Float
+    var productDescription: String
     
-    init(image: UIImage) {
-        self.image = image
+    init(imageString: String, price: Float, productDescription: String) {
+        self.imageString = imageString
+        self.price = price
+        self.productDescription = productDescription
     }
 }

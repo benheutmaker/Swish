@@ -39,7 +39,7 @@
                                         <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="749" image="in" translatesAutoresizingMaskIntoConstraints="NO" id="OsV-vA-gqW">
                                             <rect key="frame" x="8" y="28" width="90" height="66"/>
                                             <animations/>
-                                            <color key="tintColor" red="0.0" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="tintColor" red="1" green="0.47058823529411764" blue="0.31372549019607843" alpha="1" colorSpace="calibratedRGB"/>
                                             <constraints>
                                                 <constraint firstAttribute="height" constant="66" id="3Ne-Rr-tQe"/>
                                                 <constraint firstAttribute="width" constant="62" id="lEX-6D-ouh"/>
@@ -80,7 +80,7 @@ Her arms have been left uncovered. Which not only helps accentuate her gorgeous 
                                         <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="out" translatesAutoresizingMaskIntoConstraints="NO" id="bfJ-2Q-JbK">
                                             <rect key="frame" x="255" y="28" width="90" height="66"/>
                                             <animations/>
-                                            <color key="tintColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="tintColor" red="0.47058823529411764" green="0.43529411764705883" blue="0.50196078431372548" alpha="1" colorSpace="calibratedRGB"/>
                                             <constraints>
                                                 <constraint firstAttribute="width" constant="90" id="5Pl-S5-aHf"/>
                                                 <constraint firstAttribute="height" constant="66" id="RYI-YV-CJQ"/>
@@ -135,6 +135,7 @@ Her arms have been left uncovered. Which not only helps accentuate her gorgeous 
                                 <connections>
                                     <outlet property="dislikeImageView" destination="bfJ-2Q-JbK" id="mD2-d5-X9p"/>
                                     <outlet property="likeImageView" destination="OsV-vA-gqW" id="hqR-2e-75I"/>
+                                    <outlet property="productDescriptionLabel" destination="XVS-X3-m8R" id="h9q-LH-3P0"/>
                                     <outlet property="productImageView" destination="XIh-ik-Xgd" id="HHO-nF-jye"/>
                                     <outlet property="swishImageView" destination="8Pm-gu-BLI" id="zT3-fq-iZM"/>
                                 </connections>
@@ -198,13 +199,13 @@ Her arms have been left uncovered. Which not only helps accentuate her gorgeous 
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xTP-J4-IhN">
                                 <rect key="frame" x="20" y="131" width="560" height="304.5"/>
                                 <animations/>
-                                <mutableString key="text">The dress covers her shoulders only barely with 2 spaghetti straps and flows down into a fancy cowl neckline. It's a comfortable fit which covers up her breasts, but does so without making it look awkward or messy.
+                                <string key="text">The dress covers her shoulders only barely with 2 spaghetti straps and flows down into a fancy cowl neckline. It's a comfortable fit which covers up her breasts, but does so without making it look awkward or messy.
 Her arms have been left uncovered. Which not only helps accentuate her gorgeous skin, it also keeps the focus on other parts of the dress.
 
 The dress' waist is narrow, but it's a loose fit. A large belt helps accentuate her waist in a stylish manner.
 Below the waist the dress fits snug around her and has a straight style. The dress reaches to just below her knees and is longer at the sides and back of the dress.
 
-She's wearing Mary Janes, no other shoe would've matched this dress better. To top it all of she's wearing a lavish necklace and one simple, but elegant bracelet.</mutableString>
+She's wearing Mary Janes, no other shoe would've matched this dress better. To top it all of she's wearing a lavish necklace and one simple, but elegant bracelet.</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
