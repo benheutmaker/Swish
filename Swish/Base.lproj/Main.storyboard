@@ -36,21 +36,6 @@
                                             <rect key="frame" x="0.0" y="0.0" width="353" height="397"/>
                                             <animations/>
                                         </imageView>
-                                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="749" image="in" translatesAutoresizingMaskIntoConstraints="NO" id="OsV-vA-gqW">
-                                            <rect key="frame" x="8" y="28" width="90" height="66"/>
-                                            <animations/>
-                                            <color key="tintColor" red="1" green="0.47058823529411764" blue="0.31372549019607843" alpha="1" colorSpace="calibratedRGB"/>
-                                            <constraints>
-                                                <constraint firstAttribute="height" constant="66" id="3Ne-Rr-tQe"/>
-                                                <constraint firstAttribute="width" constant="62" id="lEX-6D-ouh"/>
-                                                <constraint firstAttribute="width" constant="90" id="wMd-qW-RXw"/>
-                                            </constraints>
-                                            <variation key="default">
-                                                <mask key="constraints">
-                                                    <exclude reference="lEX-6D-ouh"/>
-                                                </mask>
-                                            </variation>
-                                        </imageView>
                                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="gradient" translatesAutoresizingMaskIntoConstraints="NO" id="SDB-iJ-v4M">
                                             <rect key="frame" x="0.0" y="309" width="353" height="88"/>
                                             <animations/>
@@ -77,9 +62,10 @@ Her arms have been left uncovered. Which not only helps accentuate her gorgeous 
                                                 <constraint firstAttribute="width" secondItem="8Pm-gu-BLI" secondAttribute="height" multiplier="47:22" id="gmG-kS-lQv"/>
                                             </constraints>
                                         </imageView>
-                                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="out" translatesAutoresizingMaskIntoConstraints="NO" id="bfJ-2Q-JbK">
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="out" translatesAutoresizingMaskIntoConstraints="NO" id="bfJ-2Q-JbK">
                                             <rect key="frame" x="255" y="28" width="90" height="66"/>
                                             <animations/>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                             <color key="tintColor" red="0.47058823529411764" green="0.43529411764705883" blue="0.50196078431372548" alpha="1" colorSpace="calibratedRGB"/>
                                             <constraints>
                                                 <constraint firstAttribute="width" constant="90" id="5Pl-S5-aHf"/>
@@ -89,6 +75,22 @@ Her arms have been left uncovered. Which not only helps accentuate her gorgeous 
                                             <variation key="default">
                                                 <mask key="constraints">
                                                     <exclude reference="tuE-ha-UQf"/>
+                                                </mask>
+                                            </variation>
+                                        </imageView>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="749" image="in" translatesAutoresizingMaskIntoConstraints="NO" id="OsV-vA-gqW">
+                                            <rect key="frame" x="8" y="28" width="90" height="66"/>
+                                            <animations/>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                            <color key="tintColor" red="1" green="0.47058823529411764" blue="0.31372549019607843" alpha="1" colorSpace="calibratedRGB"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="66" id="3Ne-Rr-tQe"/>
+                                                <constraint firstAttribute="width" constant="62" id="lEX-6D-ouh"/>
+                                                <constraint firstAttribute="width" constant="90" id="wMd-qW-RXw"/>
+                                            </constraints>
+                                            <variation key="default">
+                                                <mask key="constraints">
+                                                    <exclude reference="lEX-6D-ouh"/>
                                                 </mask>
                                             </variation>
                                         </imageView>
@@ -165,21 +167,21 @@ Her arms have been left uncovered. Which not only helps accentuate her gorgeous 
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$25.99" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1zo-SQ-ByN">
-                                <rect key="frame" x="20" y="20" width="141" height="51.5"/>
+                                <rect key="frame" x="20" y="40" width="141" height="51.5"/>
                                 <animations/>
                                 <fontDescription key="fontDescription" type="system" pointSize="43"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Size: M" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qcu-vu-uIa">
-                                <rect key="frame" x="505.5" y="20" width="74.5" height="27.5"/>
+                                <rect key="frame" x="505" y="64" width="74.5" height="27.5"/>
                                 <animations/>
                                 <fontDescription key="fontDescription" type="system" pointSize="23"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7bc-mt-KSH">
-                                <rect key="frame" x="20" y="79" width="560" height="44"/>
+                                <rect key="frame" x="20" y="99" width="560" height="44"/>
                                 <animations/>
                                 <color key="backgroundColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
                                 <constraints>
@@ -197,42 +199,79 @@ Her arms have been left uncovered. Which not only helps accentuate her gorgeous 
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xTP-J4-IhN">
-                                <rect key="frame" x="20" y="131" width="560" height="304.5"/>
+                                <rect key="frame" x="20" y="203" width="560" height="101.5"/>
                                 <animations/>
                                 <string key="text">The dress covers her shoulders only barely with 2 spaghetti straps and flows down into a fancy cowl neckline. It's a comfortable fit which covers up her breasts, but does so without making it look awkward or messy.
-Her arms have been left uncovered. Which not only helps accentuate her gorgeous skin, it also keeps the focus on other parts of the dress.
-
-The dress' waist is narrow, but it's a loose fit. A large belt helps accentuate her waist in a stylish manner.
-Below the waist the dress fits snug around her and has a straight style. The dress reaches to just below her knees and is longer at the sides and back of the dress.
-
-She's wearing Mary Janes, no other shoe would've matched this dress better. To top it all of she's wearing a lavish necklace and one simple, but elegant bracelet.</string>
+Her arms have been left uncovered. Which not only helps accentuate her gorgeous skin, it also keeps the focus on other parts of the dress.</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="gucci" translatesAutoresizingMaskIntoConstraints="NO" id="kTb-Et-Azr">
+                                <rect key="frame" x="440" y="8" width="140" height="48"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="48" id="BoL-pf-RHZ"/>
+                                    <constraint firstAttribute="width" constant="140" id="qSR-Df-Bf9"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Sfe-sR-rAO">
+                                <rect key="frame" x="20" y="151" width="560" height="44"/>
+                                <animations/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="VDe-yA-AUQ"/>
+                                </constraints>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <state key="normal" title="Pay with Points"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="12"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="handlePaymentButtonPressed:" destination="KW5-b5-6Gh" eventType="touchUpInside" id="CjL-Bh-gzC"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" image="6" translatesAutoresizingMaskIntoConstraints="NO" id="ZXW-hC-UpO">
+                                <rect key="frame" x="20" y="324.5" width="560" height="267.5"/>
+                                <animations/>
+                            </imageView>
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="1zo-SQ-ByN" firstAttribute="top" secondItem="ynV-mA-smm" secondAttribute="bottom" constant="20" id="HCr-t5-2xl"/>
+                            <constraint firstItem="ZXW-hC-UpO" firstAttribute="trailing" secondItem="Lh1-8d-t8g" secondAttribute="trailingMargin" id="93Y-zb-T47"/>
+                            <constraint firstItem="1zo-SQ-ByN" firstAttribute="top" secondItem="ynV-mA-smm" secondAttribute="bottom" constant="40" id="HCr-t5-2xl"/>
+                            <constraint firstItem="kTb-Et-Azr" firstAttribute="trailing" secondItem="Lh1-8d-t8g" secondAttribute="trailingMargin" id="K7w-rn-FUO"/>
                             <constraint firstItem="7bc-mt-KSH" firstAttribute="centerX" secondItem="Lh1-8d-t8g" secondAttribute="centerX" id="Kge-jQ-LgX"/>
                             <constraint firstItem="7bc-mt-KSH" firstAttribute="centerY" secondItem="Lh1-8d-t8g" secondAttribute="centerY" id="LXh-Do-r8d"/>
                             <constraint firstItem="1zo-SQ-ByN" firstAttribute="leading" secondItem="Lh1-8d-t8g" secondAttribute="leadingMargin" id="MEl-x1-bo5"/>
                             <constraint firstItem="xTP-J4-IhN" firstAttribute="top" secondItem="7bc-mt-KSH" secondAttribute="bottom" constant="8" id="Og5-q4-jQj"/>
                             <constraint firstAttribute="trailingMargin" secondItem="Qcu-vu-uIa" secondAttribute="trailing" id="Vg4-iy-YwQ"/>
+                            <constraint firstItem="ulI-L1-zri" firstAttribute="top" secondItem="ZXW-hC-UpO" secondAttribute="bottom" constant="8" id="W8w-zx-XF2"/>
                             <constraint firstAttribute="trailingMargin" secondItem="xTP-J4-IhN" secondAttribute="trailing" id="WHy-YE-iCL"/>
                             <constraint firstItem="7bc-mt-KSH" firstAttribute="top" secondItem="xTP-J4-IhN" secondAttribute="bottom" constant="20" id="XNG-YP-92Q"/>
-                            <constraint firstItem="Qcu-vu-uIa" firstAttribute="top" secondItem="ynV-mA-smm" secondAttribute="bottom" constant="20" id="gmG-EQ-egX"/>
+                            <constraint firstItem="kTb-Et-Azr" firstAttribute="top" secondItem="ynV-mA-smm" secondAttribute="bottom" constant="8" id="Xjd-7n-RN8"/>
+                            <constraint firstItem="Qcu-vu-uIa" firstAttribute="top" secondItem="kTb-Et-Azr" secondAttribute="bottom" constant="8" id="a0r-ZB-Q4p"/>
+                            <constraint firstItem="ZXW-hC-UpO" firstAttribute="top" secondItem="xTP-J4-IhN" secondAttribute="bottom" constant="20" id="bJ3-0S-k1h"/>
+                            <constraint firstItem="xTP-J4-IhN" firstAttribute="top" secondItem="Sfe-sR-rAO" secondAttribute="bottom" constant="8" id="cch-8C-n4h"/>
+                            <constraint firstItem="7bc-mt-KSH" firstAttribute="top" secondItem="Qcu-vu-uIa" secondAttribute="bottom" constant="8" id="iUV-mn-SDa"/>
+                            <constraint firstItem="Sfe-sR-rAO" firstAttribute="trailing" secondItem="Lh1-8d-t8g" secondAttribute="trailingMargin" id="kg8-e1-8kF"/>
                             <constraint firstItem="7bc-mt-KSH" firstAttribute="leading" secondItem="Lh1-8d-t8g" secondAttribute="leadingMargin" id="ldq-p9-Uht"/>
                             <constraint firstItem="7bc-mt-KSH" firstAttribute="top" secondItem="1zo-SQ-ByN" secondAttribute="bottom" constant="8" id="nhE-kc-QFX"/>
                             <constraint firstItem="7bc-mt-KSH" firstAttribute="trailing" secondItem="Lh1-8d-t8g" secondAttribute="trailingMargin" id="pAm-sP-pLR"/>
+                            <constraint firstItem="Sfe-sR-rAO" firstAttribute="leading" secondItem="Lh1-8d-t8g" secondAttribute="leadingMargin" id="t97-2t-obX"/>
                             <constraint firstItem="xTP-J4-IhN" firstAttribute="top" secondItem="1zo-SQ-ByN" secondAttribute="bottom" constant="8" id="te2-Zf-qlL"/>
+                            <constraint firstItem="Sfe-sR-rAO" firstAttribute="top" secondItem="7bc-mt-KSH" secondAttribute="bottom" constant="8" id="uvI-X0-ZFp"/>
+                            <constraint firstItem="ZXW-hC-UpO" firstAttribute="leading" secondItem="Lh1-8d-t8g" secondAttribute="leadingMargin" id="vrD-7w-4vy"/>
                             <constraint firstItem="xTP-J4-IhN" firstAttribute="leading" secondItem="Lh1-8d-t8g" secondAttribute="leadingMargin" id="wV8-kr-nrL"/>
                         </constraints>
                         <variation key="default">
                             <mask key="constraints">
                                 <exclude reference="LXh-Do-r8d"/>
                                 <exclude reference="XNG-YP-92Q"/>
+                                <exclude reference="Og5-q4-jQj"/>
                                 <exclude reference="te2-Zf-qlL"/>
                             </mask>
                         </variation>
@@ -245,9 +284,11 @@ She's wearing Mary Janes, no other shoe would've matched this dress better. To t
     </scenes>
     <resources>
         <image name="1" width="1856" height="2784"/>
+        <image name="6" width="3168" height="4752"/>
         <image name="gradient" width="1080" height="150"/>
-        <image name="in" width="300" height="300"/>
-        <image name="out" width="300" height="300"/>
+        <image name="gucci" width="2000" height="400"/>
+        <image name="in" width="227" height="111"/>
+        <image name="out" width="227" height="111"/>
         <image name="swish_nodrop" width="1298" height="300"/>
     </resources>
 </document>

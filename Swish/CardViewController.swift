@@ -55,7 +55,7 @@ class CardViewController: TisprCardStackViewController, TisprCardStackViewContro
         if selectedIndex == 0 {
             if SLComposeViewController.isAvailableForServiceType(SLServiceTypeTwitter) {
                 let tweetSheet  = SLComposeViewController(forServiceType: SLServiceTypeTwitter)
-                tweetSheet.setInitialText("I love these clothes! #SoSwish @App_Swish")
+                tweetSheet.setInitialText("I love these clothes! #SoSwish  @App_Swish")
                 tweetSheet.addImage(UIImage(named: "\(currentCard + 1)"))
                 self.presentViewController(tweetSheet, animated: true, completion: { () -> Void in
                     NSNotificationCenter.defaultCenter().postNotificationName(add5PointsNotification, object: nil)

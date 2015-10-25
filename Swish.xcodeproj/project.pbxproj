@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		234D60801BDD31330074A184 /* sparkles.gif in Resources */ = {isa = PBXBuildFile; fileRef = 234D607F1BDD31330074A184 /* sparkles.gif */; };
 		238356D21BDC0BDA00D04EDB /* TisprCardStackViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 238356CF1BDC0BDA00D04EDB /* TisprCardStackViewCell.swift */; };
 		238356D31BDC0BDA00D04EDB /* TisprCardStackViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 238356D01BDC0BDA00D04EDB /* TisprCardStackViewController.swift */; };
 		238356D41BDC0BDA00D04EDB /* TisprCardStackViewLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 238356D11BDC0BDA00D04EDB /* TisprCardStackViewLayout.swift */; };
@@ -49,6 +50,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		234D607F1BDD31330074A184 /* sparkles.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = sparkles.gif; sourceTree = "<group>"; };
 		238356CF1BDC0BDA00D04EDB /* TisprCardStackViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TisprCardStackViewCell.swift; sourceTree = "<group>"; };
 		238356D01BDC0BDA00D04EDB /* TisprCardStackViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TisprCardStackViewController.swift; sourceTree = "<group>"; };
 		238356D11BDC0BDA00D04EDB /* TisprCardStackViewLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TisprCardStackViewLayout.swift; sourceTree = "<group>"; };
@@ -155,6 +157,7 @@
 				23A190AB1BDBFBE3009DE97C /* LaunchScreen.storyboard */,
 				23A190AE1BDBFBE3009DE97C /* Info.plist */,
 				23A190A61BDBFBE3009DE97C /* Swish.xcdatamodeld */,
+				234D607F1BDD31330074A184 /* sparkles.gif */,
 			);
 			path = Swish;
 			sourceTree = "<group>";
@@ -314,6 +317,7 @@
 				238357C21BDC48B900D04EDB /* Simplify.bundle in Resources */,
 				23A190AD1BDBFBE3009DE97C /* LaunchScreen.storyboard in Resources */,
 				23A190AA1BDBFBE3009DE97C /* Assets.xcassets in Resources */,
+				234D60801BDD31330074A184 /* sparkles.gif in Resources */,
 				23A190A51BDBFBE3009DE97C /* Main.storyboard in Resources */,
 				23DE0C6C1BDD16B2007917A2 /* PointsView.xib in Resources */,
 			);

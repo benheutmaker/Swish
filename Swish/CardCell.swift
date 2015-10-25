@@ -59,6 +59,11 @@ class CardCell: TisprCardStackViewCell {
     func updateSmileVote() {
         let rotation = atan2(transform.b, transform.a) * 100
         
+        likeImageView.image = likeImageView.image?.imageWithRenderingMode(UIImageRenderingMode.AlwaysTemplate)
+        dislikeImageView.image = dislikeImageView.image?.imageWithRenderingMode(UIImageRenderingMode.AlwaysTemplate)
+        
+        print(likeImageView.tintColor)
+        
         if rotation > 7 {
             //Dislike
             likeImageView.hidden = false
