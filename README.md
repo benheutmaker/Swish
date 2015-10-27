@@ -3,10 +3,8 @@ Swish is a gesture based app designed for shopping fashion. Built in 24 hours at
 
 Integrated into Simplify Payment SDK for processing Mastercard payments.
 
-![alt tag](/../master/Screenshots/Screenshot1.jpg?raw=true "Idle")
-
+# If you like the piece, it's "In", and you aquire points.
 ![alt tag](/../master/Screenshots/Screenshot3.jpg?raw=true "In")
-If you like the piece, it's "In", and you aquire points.
 
+# If The piece doesn't call to you, it's "Out".
 ![alt tag](/../master/Screenshots/Screenshot2.jpg?raw=true "Out")
-If The piece doesn't call to you, it's "Out".
