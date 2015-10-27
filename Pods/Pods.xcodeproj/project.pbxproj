@@ -1,0 +1,436 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0340843CC6361DB3885B589B1902CB04 /* UICountingLabel-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A6ACA1BEE4D30A642BA1CA5A634AFDA7 /* UICountingLabel-dummy.m */; };
+		2E8EA883FE17707DB7AB768672735F20 /* Pods-Swish-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 81229283A916AC95E83F8F8B930DB7B5 /* Pods-Swish-dummy.m */; };
+		5E2365C146001A309A301A2FA9644DE6 /* UICountingLabel.h in Headers */ = {isa = PBXBuildFile; fileRef = FF46A73951B99712DFB247E29429D37A /* UICountingLabel.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9752DB0F9E5325E56FEBD9DFFD417E0E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E4E89230EF59BC255123B67864ACF77 /* Foundation.framework */; };
+		BD80174D570AB64D6DDAAA5E8620B31C /* UICountingLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 08D60E849628E51E57940A65BC02945D /* UICountingLabel.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		EC8623CCC5F339FF76D72C25879E2535 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E4E89230EF59BC255123B67864ACF77 /* Foundation.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		64530FA41D740AC25EB5E85286C95BF3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CB58C090946B3264D95ABBAC3D51A036;
+			remoteInfo = UICountingLabel;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		08D60E849628E51E57940A65BC02945D /* UICountingLabel.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = UICountingLabel.m; sourceTree = "<group>"; };
+		0972CE6E3ECB4B20F2B6BDDF47372AD9 /* UICountingLabel.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = UICountingLabel.xcconfig; sourceTree = "<group>"; };
+		2E0F6F09EF31037369807CA176CD9A3E /* Pods-Swish.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Swish.debug.xcconfig"; sourceTree = "<group>"; };
+		3E4E89230EF59BC255123B67864ACF77 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		3F0882DDEB8C27CFD799ABDAD77E26AE /* libUICountingLabel.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libUICountingLabel.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		511D9C43EA7831E14B32F20241CC918F /* libPods-Swish.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Swish.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		799C640AA9615C5FF0525B1DA4647456 /* Pods-Swish-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Swish-resources.sh"; sourceTree = "<group>"; };
+		81229283A916AC95E83F8F8B930DB7B5 /* Pods-Swish-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Swish-dummy.m"; sourceTree = "<group>"; };
+		979F9F2A08EE928B935C8573F57F8A8B /* UICountingLabel-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UICountingLabel-prefix.pch"; sourceTree = "<group>"; };
+		9935E78F66467C2720280F49831D0ADD /* Pods-Swish-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Swish-frameworks.sh"; sourceTree = "<group>"; };
+		A6ACA1BEE4D30A642BA1CA5A634AFDA7 /* UICountingLabel-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "UICountingLabel-dummy.m"; sourceTree = "<group>"; };
+		AEC031BBCB04CCED8DAC5E354E62FBA9 /* Pods-Swish.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Swish.release.xcconfig"; sourceTree = "<group>"; };
+		BA6428E9F66FD5A23C0A2E06ED26CD2F /* Podfile */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		CB74D356D267265DDF97076642300C43 /* Pods-Swish-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Swish-acknowledgements.markdown"; sourceTree = "<group>"; };
+		FD2F3359B1E8F9723232F20FF2D04D52 /* Pods-Swish-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Swish-acknowledgements.plist"; sourceTree = "<group>"; };
+		FF46A73951B99712DFB247E29429D37A /* UICountingLabel.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = UICountingLabel.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6BEDFA169E2BA9FA5E8F4CA8DD4A664C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9752DB0F9E5325E56FEBD9DFFD417E0E /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		79434056E6AE9F563FDB442CE925D6BA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EC8623CCC5F339FF76D72C25879E2535 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		49AF6C7D9E6942C15061AF2A5864CD64 /* UICountingLabel */ = {
+			isa = PBXGroup;
+			children = (
+				FF46A73951B99712DFB247E29429D37A /* UICountingLabel.h */,
+				08D60E849628E51E57940A65BC02945D /* UICountingLabel.m */,
+				AAA7F2C973193F94CE2D529D10BC034A /* Support Files */,
+			);
+			path = UICountingLabel;
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				BA6428E9F66FD5A23C0A2E06ED26CD2F /* Podfile */,
+				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
+				EB01796D8B8ABBB9529B519B17B0DC9A /* Pods */,
+				8DF8351972411F695A0CAA9A7EC389B7 /* Products */,
+				88902CD018D956124D7A00FF1DA2E858 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		88902CD018D956124D7A00FF1DA2E858 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				B5A02A0A8511D37657CAECDAF9F43CAC /* Pods-Swish */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		8DF8351972411F695A0CAA9A7EC389B7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				511D9C43EA7831E14B32F20241CC918F /* libPods-Swish.a */,
+				3F0882DDEB8C27CFD799ABDAD77E26AE /* libUICountingLabel.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AAA7F2C973193F94CE2D529D10BC034A /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				0972CE6E3ECB4B20F2B6BDDF47372AD9 /* UICountingLabel.xcconfig */,
+				A6ACA1BEE4D30A642BA1CA5A634AFDA7 /* UICountingLabel-dummy.m */,
+				979F9F2A08EE928B935C8573F57F8A8B /* UICountingLabel-prefix.pch */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/UICountingLabel";
+			sourceTree = "<group>";
+		};
+		B5A02A0A8511D37657CAECDAF9F43CAC /* Pods-Swish */ = {
+			isa = PBXGroup;
+			children = (
+				CB74D356D267265DDF97076642300C43 /* Pods-Swish-acknowledgements.markdown */,
+				FD2F3359B1E8F9723232F20FF2D04D52 /* Pods-Swish-acknowledgements.plist */,
+				81229283A916AC95E83F8F8B930DB7B5 /* Pods-Swish-dummy.m */,
+				9935E78F66467C2720280F49831D0ADD /* Pods-Swish-frameworks.sh */,
+				799C640AA9615C5FF0525B1DA4647456 /* Pods-Swish-resources.sh */,
+				2E0F6F09EF31037369807CA176CD9A3E /* Pods-Swish.debug.xcconfig */,
+				AEC031BBCB04CCED8DAC5E354E62FBA9 /* Pods-Swish.release.xcconfig */,
+			);
+			name = "Pods-Swish";
+			path = "Target Support Files/Pods-Swish";
+			sourceTree = "<group>";
+		};
+		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BF6342C8B29F4CEEA088EFF7AB4DE362 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BF6342C8B29F4CEEA088EFF7AB4DE362 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				3E4E89230EF59BC255123B67864ACF77 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		EB01796D8B8ABBB9529B519B17B0DC9A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				49AF6C7D9E6942C15061AF2A5864CD64 /* UICountingLabel */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		CE61F2901F40DBDB258B46A5D5D12A3D /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5E2365C146001A309A301A2FA9644DE6 /* UICountingLabel.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		9AC888C2288DAD504297158ED16CED48 /* Pods-Swish */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8859374C925CAF67687A1A3CFD59BC27 /* Build configuration list for PBXNativeTarget "Pods-Swish" */;
+			buildPhases = (
+				D7836E14234AFFAE4E0E4535A884E8BA /* Sources */,
+				79434056E6AE9F563FDB442CE925D6BA /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AAFDB5EB1C3D8AF2D144D248A713D25A /* PBXTargetDependency */,
+			);
+			name = "Pods-Swish";
+			productName = "Pods-Swish";
+			productReference = 511D9C43EA7831E14B32F20241CC918F /* libPods-Swish.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		CB58C090946B3264D95ABBAC3D51A036 /* UICountingLabel */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5BEC42B854A4AD063194368A3CDB8398 /* Build configuration list for PBXNativeTarget "UICountingLabel" */;
+			buildPhases = (
+				F0990C015EE16A7A8FA0363B2FE43E23 /* Sources */,
+				6BEDFA169E2BA9FA5E8F4CA8DD4A664C /* Frameworks */,
+				CE61F2901F40DBDB258B46A5D5D12A3D /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = UICountingLabel;
+			productName = UICountingLabel;
+			productReference = 3F0882DDEB8C27CFD799ABDAD77E26AE /* libUICountingLabel.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0700;
+				LastUpgradeCheck = 0700;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = 8DF8351972411F695A0CAA9A7EC389B7 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9AC888C2288DAD504297158ED16CED48 /* Pods-Swish */,
+				CB58C090946B3264D95ABBAC3D51A036 /* UICountingLabel */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D7836E14234AFFAE4E0E4535A884E8BA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2E8EA883FE17707DB7AB768672735F20 /* Pods-Swish-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F0990C015EE16A7A8FA0363B2FE43E23 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0340843CC6361DB3885B589B1902CB04 /* UICountingLabel-dummy.m in Sources */,
+				BD80174D570AB64D6DDAAA5E8620B31C /* UICountingLabel.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		AAFDB5EB1C3D8AF2D144D248A713D25A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = UICountingLabel;
+			target = CB58C090946B3264D95ABBAC3D51A036 /* UICountingLabel */;
+			targetProxy = 64530FA41D740AC25EB5E85286C95BF3 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		68F082A150994BB3092EB42B63294C91 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0972CE6E3ECB4B20F2B6BDDF47372AD9 /* UICountingLabel.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/UICountingLabel/UICountingLabel-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		6C636BFCEDF791DF3CC6DE9A4E74FDF9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0972CE6E3ECB4B20F2B6BDDF47372AD9 /* UICountingLabel.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/UICountingLabel/UICountingLabel-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		85AA0113C4B687846D519971DDB92C95 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2E0F6F09EF31037369807CA176CD9A3E /* Pods-Swish.debug.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				MACH_O_TYPE = staticlib;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		C074F63C9EE7CB4D8C618390A32CEC35 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				ONLY_ACTIVE_ARCH = YES;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		DAED22F10A83C0329EEA4A0D06A3BCA9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AEC031BBCB04CCED8DAC5E354E62FBA9 /* Pods-Swish.release.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				MACH_O_TYPE = staticlib;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		E43846B588E1892F3093F3B7082B6DFB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = "RELEASE=1";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C074F63C9EE7CB4D8C618390A32CEC35 /* Debug */,
+				E43846B588E1892F3093F3B7082B6DFB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5BEC42B854A4AD063194368A3CDB8398 /* Build configuration list for PBXNativeTarget "UICountingLabel" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				68F082A150994BB3092EB42B63294C91 /* Debug */,
+				6C636BFCEDF791DF3CC6DE9A4E74FDF9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8859374C925CAF67687A1A3CFD59BC27 /* Build configuration list for PBXNativeTarget "Pods-Swish" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				85AA0113C4B687846D519971DDB92C95 /* Debug */,
+				DAED22F10A83C0329EEA4A0D06A3BCA9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}
